@@ -17,11 +17,6 @@ body {
   --white: #f7efd8;
 }
 
-.banner-title {
-  font-size: 5rem;
-  font-family: baloo;
-}
-
 @font-face {
   font-family: quicksand-regular;
   src: url("./assets/fonts/Quicksand-Regular.ttf");
@@ -30,6 +25,12 @@ body {
 @font-face {
   font-family: baloo;
   src: url("./assets/fonts/baloo.thambi-regular.ttf");
+}
+
+/* Banner */
+.banner-title {
+  font-size: 5rem;
+  font-family: baloo;
 }
 
 b {
@@ -46,11 +47,119 @@ b {
 }
 .banner-right-items {
   height: 100%;
-  background-color: red;
 }
 
 .banner-right-items img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* End banner */
+
+/* Services */
+
+.service {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.service h2 {
+  color: white;
+}
+
+.all-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+.service-card {
+  background-color: white;
+  /* height: 100px; */
+  border-radius: 10px;
+  border: var(--color1) 2px solid;
+  padding: 20px;
+}
+
+.service-card h4 {
+  padding: 20px;
+  font-family: baloo;
+}
+
+.service-img {
+  height: 70px !important;
+  width: 70px !important;
+  border: var(--color1) 1px solid;
+}
+
+/* End services */
+
+/* After banner */
+
+.after-banner {
+  text-align: center;
+  color: var(--white);
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.profile-img {
+  object-fit: cover;
+  height: 30vh;
+  width: 30vh;
+  border-radius: 50%;
+}
+
+/* End after banner */
+
+/* Info session */
+.info-session img {
+  width: 100%;
+}
+
+/* End info session */
+
+.contact {
+  padding: 50px 0;
+  background-color: #000000cd;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  color: var(--white);
+}
+
+.contact a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  /* background-color: white; */
+  padding: 10px;
+}
+
+.footer-img {
+  height: 30px;
+  width: 30px;
+}
+
+.footer-center {
+  text-align: center;
+}
+/* End footer */
+
+@media (max-width: 520px) {
+  body {
+    margin: 0 20px;
+  }
+
+  .banner-title {
+    font-size: 3rem;
+  }
 }
