@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: quicksand-regular;
+}
+
+body {
+  background-color: #1a237e;
+  margin: 0 80px;
+}
+
+:root {
+  --color1: #fcb40a;
+  --color2: #ff8923;
+  --color3: #fd476f;
+  --white: #f7efd8;
+}
+
+.banner-title {
+  font-size: 5rem;
+  font-family: baloo;
+}
+
+@font-face {
+  font-family: quicksand-regular;
+  src: url("./assets/fonts/Quicksand-Regular.ttf");
+}
+
+@font-face {
+  font-family: baloo;
+  src: url("./assets/fonts/baloo.thambi-regular.ttf");
+}
+
+b {
+  color: var(--color1);
+}
+
+.banner {
+  height: 100vh;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  color: var(--white);
+}
+.banner-right-items {
+  height: 100%;
+  background-color: red;
+}
+
+.banner-right-items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
